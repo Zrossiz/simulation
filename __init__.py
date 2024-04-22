@@ -10,7 +10,7 @@ def draw_map_with_entities():
         for y_map in range(20):
             my_map.set_dirt(x_map, y_map)
 
-    for r in range(6):
+    for r in range(8):
         x = random.randint(0, 19)
         y = random.randint(0, 19)
         my_map.set_rocks(x, y)
@@ -19,6 +19,11 @@ def draw_map_with_entities():
         x = random.randint(0, 19)
         y = random.randint(0, 19)
         my_map.set_grass(x, y)
+
+    for t in range(6):
+        x = random.randint(0, 19)
+        y = random.randint(0, 19)
+        my_map.set_tree(x, y)
 
 
 draw_map_with_entities()

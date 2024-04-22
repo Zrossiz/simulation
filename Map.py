@@ -1,6 +1,7 @@
 from flora.Grass import Grass
 from flora.Rock import Rock
 from flora.Dirt import Dirt
+from flora.Tree import Tree
 
 class Map:
     def __init__(self):
@@ -18,27 +19,18 @@ class Map:
 
     def set_grass(self, x, y):
         Grass(x, y, self.map).set_grass()
-        Grass(x, y, self.map).set_grass()
-        Grass(x, y, self.map).set_grass()
         return self.map
 
     def set_rocks(self, x, y):
-        Rock(x, y, self.map).set_rock()
-        Rock(x, y, self.map).set_rock()
-        Rock(x, y, self.map).set_rock()
         Rock(x, y, self.map).set_rock()
         return self.map
 
     def set_dirt(self, x, y):
         Dirt(x, y, self.map).set_dirt()
-        Dirt(x, y, self.map).set_dirt()
-        Dirt(x, y, self.map).set_dirt()
-        Dirt(x, y, self.map).set_dirt()
-        Dirt(x, y, self.map).set_dirt()
-        Dirt(x, y, self.map).set_dirt()
-        Dirt(x, y, self.map).set_dirt()
         return self.map
 
-
+    def set_tree(self, x, y):
+        Tree(x, y, self.map).set_tree()
+        return self.map
 
 
