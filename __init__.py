@@ -3,7 +3,9 @@ from Map import Map
 
 my_map = Map()
 my_map.init_map()
-result = my_map.set_grass(1, 2)
+my_map.set_grass()
+result = my_map.set_rocks()
+
 
 for i in range(20):
     for j in range(20):
