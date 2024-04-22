@@ -11,33 +11,33 @@ def draw_map_with_entities():
             my_map.set_dirt(x_map, y_map)
 
     for r in range(12):
-        x = random.randint(0, 19)
-        y = random.randint(0, 19)
-        my_map.set_rocks(x, y)
+        coordinates = get_random_x_y()
+        my_map.set_rocks(coordinates[0], coordinates[1])
 
     for g in range(12):
-        x = random.randint(0, 19)
-        y = random.randint(0, 19)
-        my_map.set_grass(x, y)
+        coordinates = get_random_x_y()
+        my_map.set_grass(coordinates[0], coordinates[1])
 
     for t in range(6):
-        x = random.randint(0, 19)
-        y = random.randint(0, 19)
-        my_map.set_tree(x, y)
+        coordinates = get_random_x_y()
+        my_map.set_tree(coordinates[0], coordinates[1])
 
     for h in range(8):
-        x = random.randint(0, 19)
-        y = random.randint(0, 19)
-        my_map.set_herbivore(x, y)
+        coordinates = get_random_x_y()
+        my_map.set_herbivore(coordinates[0], coordinates[1])
 
-    for p in range(2):
-        x = random.randint(0, 19)
-        y = random.randint(0, 19)
-        my_map.set_predator(x, y)
+    for p in range(3):
+        coordinates = get_random_x_y()
+        my_map.set_predator(coordinates[0], coordinates[1])
+
+
+def get_random_x_y():
+    x = random.randint(0, 19)
+    y = random.randint(0, 19)
+    return [x, y]
 
 
 draw_map_with_entities()
-
 
 for i in range(20):
     for j in range(20):
