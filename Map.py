@@ -1,6 +1,6 @@
-from Grass import Grass
-from Rock import Rock
-from Dirt import Dirt
+from flora.Grass import Grass
+from flora.Rock import Rock
+from flora.Dirt import Dirt
 
 class Map:
     def __init__(self):
