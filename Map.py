@@ -2,6 +2,8 @@ from flora.Grass import Grass
 from flora.Rock import Rock
 from flora.Dirt import Dirt
 from flora.Tree import Tree
+from fauna.Herbivore import Herbivore
+
 
 class Map:
     def __init__(self):
@@ -33,4 +35,6 @@ class Map:
         Tree(x, y, self.map).set_tree()
         return self.map
 
-
+    def set_herbivore(self, x, y):
+        Herbivore(x, y, self.map).set_herbivore()
+        return self.map
