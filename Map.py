@@ -1,3 +1,5 @@
+from Grass import Grass
+
 class Map:
 
     def __init__(self):
@@ -8,7 +10,8 @@ class Map:
     def init_map(self):
         for i in range(self.x):
             for j in range(self.y):
-                print('🍀', end='')
+                grass_instance = Grass(i, j)
+                grass_instance.set_grass()
             print()
 
 
