@@ -1,5 +1,6 @@
 from Grass import Grass
 from Rock import Rock
+from Dirt import Dirt
 
 class Map:
     def __init__(self):
@@ -27,5 +28,17 @@ class Map:
         Rock(12, 8, self.map).set_rock()
         Rock(14, 8, self.map).set_rock()
         return self.map
+
+    def set_dirt(self):
+        Dirt(19, 0, self.map).set_dirt()
+        Dirt(19, 1, self.map).set_dirt()
+        Dirt(19, 2, self.map).set_dirt()
+        Dirt(19, 3, self.map).set_dirt()
+        Dirt(19, 4, self.map).set_dirt()
+        Dirt(19, 5, self.map).set_dirt()
+        Dirt(19, 19, self.map).set_dirt()
+        return self.map
+
+
 
 

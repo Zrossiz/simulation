@@ -4,6 +4,7 @@ from Map import Map
 my_map = Map()
 my_map.init_map()
 my_map.set_grass()
+my_map.set_dirt()
 result = my_map.set_rocks()
 
 
