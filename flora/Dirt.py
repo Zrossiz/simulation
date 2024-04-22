@@ -5,5 +5,5 @@ class Dirt:
         self.map_instance = map_instance
 
     def set_dirt(self):
-        self.map_instance[self.x][self.y] = '🔳'
+        self.map_instance[self.x][self.y] = '🟫'
         return self.map_instance

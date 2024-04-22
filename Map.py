@@ -16,27 +16,27 @@ class Map:
             self.map.append(generated_string)
         return self.map
 
-    def set_grass(self):
-        Grass(1, 2, self.map).set_grass()
-        Grass(2, 1, self.map).set_grass()
-        Grass(3, 4, self.map).set_grass()
+    def set_grass(self, x, y):
+        Grass(x, y, self.map).set_grass()
+        Grass(x, y, self.map).set_grass()
+        Grass(x, y, self.map).set_grass()
         return self.map
 
-    def set_rocks(self):
-        Rock(8, 8, self.map).set_rock()
-        Rock(10, 8, self.map).set_rock()
-        Rock(12, 8, self.map).set_rock()
-        Rock(14, 8, self.map).set_rock()
+    def set_rocks(self, x, y):
+        Rock(x, y, self.map).set_rock()
+        Rock(x, y, self.map).set_rock()
+        Rock(x, y, self.map).set_rock()
+        Rock(x, y, self.map).set_rock()
         return self.map
 
-    def set_dirt(self):
-        Dirt(19, 0, self.map).set_dirt()
-        Dirt(19, 1, self.map).set_dirt()
-        Dirt(19, 2, self.map).set_dirt()
-        Dirt(19, 3, self.map).set_dirt()
-        Dirt(19, 4, self.map).set_dirt()
-        Dirt(19, 5, self.map).set_dirt()
-        Dirt(19, 19, self.map).set_dirt()
+    def set_dirt(self, x, y):
+        Dirt(x, y, self.map).set_dirt()
+        Dirt(x, y, self.map).set_dirt()
+        Dirt(x, y, self.map).set_dirt()
+        Dirt(x, y, self.map).set_dirt()
+        Dirt(x, y, self.map).set_dirt()
+        Dirt(x, y, self.map).set_dirt()
+        Dirt(x, y, self.map).set_dirt()
         return self.map
 
 
