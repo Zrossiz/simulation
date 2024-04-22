@@ -1,7 +1,7 @@
 from Grass import Grass
 
-class Map:
 
+class Map:
     def __init__(self):
         self.map = []
         self.x = 20
@@ -9,9 +9,13 @@ class Map:
 
     def init_map(self):
         for i in range(self.x):
+            generated_string = []
             for j in range(self.y):
-                grass_instance = Grass(i, j)
-                grass_instance.set_grass()
-            print()
+                generated_string.append('#')
+            self.map.append(generated_string)
+        return self.map
 
+    def set_grass(self, x, y):
+        grass_instance = Grass(x, y, self.map)
+        return grass_instance.set_grass()
 
