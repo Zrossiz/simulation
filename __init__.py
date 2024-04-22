@@ -30,6 +30,11 @@ def draw_map_with_entities():
         y = random.randint(0, 19)
         my_map.set_herbivore(x, y)
 
+    for p in range(2):
+        x = random.randint(0, 19)
+        y = random.randint(0, 19)
+        my_map.set_predator(x, y)
+
 
 draw_map_with_entities()
 

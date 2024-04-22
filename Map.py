@@ -3,6 +3,7 @@ from flora.Rock import Rock
 from flora.Dirt import Dirt
 from flora.Tree import Tree
 from fauna.Herbivore import Herbivore
+from fauna.Predator import Predator
 
 
 class Map:
@@ -37,4 +38,8 @@ class Map:
 
     def set_herbivore(self, x, y):
         Herbivore(x, y, self.map).set_herbivore()
+        return self.map
+
+    def set_predator(self, x, y):
+        Predator(x, y, self.map).set_predator()
         return self.map
